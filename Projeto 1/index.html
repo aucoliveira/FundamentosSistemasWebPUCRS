@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado Du Bairro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header class="bg-info text-white text-center py-3">
+        <h1 class="display-4">Minimercado Du Bairro</h1>
+        <p class="lead">Qualidade e preço baixo perto de você!</p>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#carouselHome" aria-label="Nossos Produtos">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#produtos" aria-label="Nossos Produtos">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#servicos" aria-label="Nossos Serviços">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#cadastro" aria-label="Cadastro de Cliente">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#agendamento" aria-label="Agendamento de Entrega ou Retirada">Agendamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contato" aria-label="Informações de Contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+
+        <section id="carouselHome" class="mb-5">
+            <h2 class="text-center mb-4">Ofertas do Dia</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/maca.jpg" class="d-block w-100" alt="Maçãs frescas e suculentas.">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                            <h5>Maçã Gala (Kg)</h5>
+                            <p>Maçãs frescas e suculentas, ideais para um lanche saudável. Valor: R$ 8,99</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/pao.jpg" class="d-block w-100" alt="Pães franceses quentinhos e crocantes.">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                            <h5>Pão Francês (Kg)</h5>
+                            <p>Pão quentinho e crocante, saindo a toda hora. Valor: R$ 15,90</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/leite.jpg" class="d-block w-100" alt="Caixa de Leite Integral.">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                            <h5>Leite Integral (1L)</h5>
+                            <p>Leite longa vida para o seu café da manhã e receitas. Valor: R$ 4,80</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="produtos">
+            <h2 class="text-center mb-4">Nossos Produtos</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <h3 class="mt-4">Hortifruti</h3>
+                    <div class="card h-100">
+                        <img src="./img/maca.jpg" class="card-img-top" alt="Foto de Maçãs. Maçãs frescas e suculentas.">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Maçã Gala (Kg)</h5>
+                            <p class="card-text">Maçãs frescas e suculentas, ideais para um lanche saudável.</p>
+                            <p class="card-text"><strong>Valor:</strong> R$ 8,99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="mt-4 visually-hidden">Hortifruti</h3> <div class="card h-100">
+                        <img src="./img/alface.jpg" class="card-img-top" alt="Foto de Alface. Alface crespa fresquinha.">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Alface Crespa (Unidade)</h5>
+                            <p class="card-text">Alface fresquinha para dar um toque especial na sua salada.</p>
+                            <p class="card-text"><strong>Valor:</strong> R$ 3,50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="mt-4">Padaria</h3>
+                    <div class="card h-100">
+                        <img src="./img/pao.jpg" class="card-img-top" alt="Foto de Pães Franceses. Pão quentinho e crocante.">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pão Francês (Kg)</h5>
+                            <p class="card-text">Pão quentinho e crocante, saindo a toda hora.</p>
+                            <p class="card-text"><strong>Valor:</strong> R$ 15,90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="mt-4 visually-hidden">Padaria</h3> <div class="card h-100">
+                        <img src="./img/bolo.jpg" class="card-img-top" alt="Foto de Bolo de Chocolate. Uma fatia deliciosa.">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bolo de Chocolate (Fatia)</h5>
+                            <p class="card-text">Uma deliciosa fatia de bolo para alegrar sua tarde.</p>
+                            <p class="card-text"><strong>Valor:</strong> R$ 7,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="mt-4">Mercearia</h3>
+                    <div class="card h-100">
+                        <img src="./img/arroz.jpg" class="card-img-top" alt="Foto de Pacote de Arroz. Arroz agulhinha de alta qualidade.">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Arroz Tipo 1 (5kg)</h5>
+                            <p class="card-text">Arroz agulhinha de alta qualidade para suas refeições.</p>
+                            <p class="card-text"><strong>Valor:</strong> R$ 7,85</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="mt-4 visually-hidden">Mercearia</h3> <div class="card h-100">
+                        <img src="./img/leite.jpg" class="card-img-top" alt="Foto de Caixa de Leite. Leite integral longa vida.">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Leite Integral (1L)</h5>
+                            <p class="card-text">Leite longa vida para o seu café da manhã e receitas.</p>
+                            <p class="card-text"><strong>Valor:</strong> R$ 4,80</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="servicos">
+            <h2 class="text-center mb-4">Nossos Serviços</h2>
+            <p class="text-center">Além de produtos de qualidade, oferecemos serviços para sua conveniência.</p>
+            
+            <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Entrega em Domicílio (Delivery)</h3>
+                            <img src="./img/motorcycle_15300698.png" class="img-fluid my-3" alt="Ícone de uma motocicleta de entregador." width="150" height="80">
+                            <p class="card-text">Receba suas compras no conforto da sua casa. Consulte a taxa para o seu bairro.</p>
+                            <p class="card-text"><strong>Valor do serviço:</strong> A partir de R$ 5,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Recarga de Celular</h3>
+                            <img src="./img/smartphone_398388.png" class="img-fluid my-3" alt="Ícone de um celular para recargas." width="150" height="80">
+                            <p class="card-text">Faça a recarga do seu celular pré-pago de todas as operadoras aqui no caixa.</p>
+                            <p class="card-text"><strong>Valor:</strong> Conforme o valor da recarga.</p>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="cadastro" class="mb-5">
+            <h2 class="text-center mb-4">Cadastro do Cliente</h2>
+            <form id="clientRegistrationForm" class="p-4 border rounded shadow-sm">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome Completo <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Ex: 123.456.789-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required aria-required="true">
+                    <small class="form-text text-muted">Formato: 123.456.789-00</small>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="seu.email@exemplo.com" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone / WhatsApp <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Ex: (99) 99999-0000" pattern="\(\d{2}\)\s\d{5}-\d{4}" required aria-required="true">
+                    <small class="form-text text-muted">Formato: (99) 99999-0000</small>
+                </div>
+                <div class="mb-3">
+                    <label for="endereco" class="form-label">Endereço <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua, número, bairro" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                    <label for="cidade" class="form-label">Cidade <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Sua cidade" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                    <label for="estado" class="form-label">Estado <span class="text-danger">*</span></label>
+                    <select class="form-select" id="estado" name="estado" required aria-required="true">
+                        <option value="">Selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Sexo:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoMasculino" value="masculino" aria-label="Sexo Masculino">
+                        <label class="form-check-label" for="sexoMasculino">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoFeminino" value="feminino" aria-label="Sexo Feminino">
+                        <label class="form-check-label" for="sexoFeminino">
+                            Feminino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoOutro" value="outro" aria-label="Sexo Outro">
+                        <label class="form-check-label" for="sexoOutro">
+                            Outro
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="termos" required aria-required="true">
+                    <label class="form-check-label" for="termos">Eu concordo com os <a href="#" aria-label="Termos de Serviço do Minimercado Du Bairro">Termos de Serviço</a> <span class="text-danger">*</span></label>
+                </div>
+                <button type="submit" class="btn btn-primary" aria-label="Cadastrar Cliente">Cadastrar</button>
+            </form>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="agendamento" class="mb-5">
+            <h2 class="text-center mb-4">Agendamento de Serviço</h2>
+            <form id="schedulingForm" class="p-4 border rounded shadow-sm">
+                <div class="mb-3">
+                    <label for="tipoServico" class="form-label">Tipo de Serviço <span class="text-danger">*</span></label>
+                    <select class="form-select" id="tipoServico" name="tipoServico" required aria-required="true">
+                        <option value="">Selecione...</option>
+                        <option value="retirada">Retirada no Local</option>
+                        <option value="delivery">Tele-entrega</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="dataAgendamento" class="form-label">Data do Agendamento <span class="text-danger">*</span></label>
+                    <input type="date" class="form-control" id="dataAgendamento" name="dataAgendamento" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                    <label for="horaAgendamento" class="form-label">Hora do Agendamento <span class="text-danger">*</span></label>
+                    <input type="time" class="form-control" id="horaAgendamento" name="horaAgendamento" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                    <label for="observacoes" class="form-label">Observações</label>
+                    <textarea class="form-control" id="observacoes" name="observacoes" rows="3" placeholder="Ex: Preferência de horário, itens específicos, etc." aria-label="Observações para o agendamento"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success" aria-label="Agendar Serviço">Agendar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr class="my-5">
+
+    <footer id="contato" class="bg-info text-white text-center py-4">
+        <h3 class="mb-3">Informações de Contato e Navegação</h3>
+        <p><strong>Minimercado Du Bairro LTDA.</strong></p>
+        <p>Endereço: Rua 9, 123 - Tabapuá - Caucaia - CE</p>
+        <p>Telefone / WhatsApp: <a href="tel:+5599999990000" class="text-white text-decoration-none" aria-label="Telefone e WhatsApp do Minimercado Du Bairro">(99) 99999-0000</a></p>
+        <p class="mt-3">
+            <a href="#produtos" class="text-white text-decoration-none" aria-label="Ir para a seção de Produtos">Produtos</a> |
+            <a href="#servicos" class="text-white text-decoration-none" aria-label="Ir para a seção de Serviços">Serviços</a> |
+            <a href="#cadastro" class="text-white text-decoration-none" aria-label="Ir para a seção de Cadastro">Cadastro</a> |
+            <a href="#agendamento" class="text-white text-decoration-none" aria-label="Ir para a seção de Agendamento">Agendamento</a>
+        </p>
+        <br>
+        <p class="mb-0"><em>&copy; 2025 Minimercado Du Bairro. Todos os direitos reservados.</em></p>
+        <p><em>Desenvolvido por Augusto Cesar Barros de Oliveria, apenas com HTML para fins educacionais.</em></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigF/g/6gJ3qP5x2T" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
